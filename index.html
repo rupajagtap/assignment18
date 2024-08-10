@@ -5,95 +5,63 @@
     <title>HealthBlogs</title>
     <!-- font awesome cdn link -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&display=swap" rel="stylesheet">
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&display=swap');
+          </style>
 
       
-    <style>
-      .blogs-heading{
-    text-align: center;
-    font-size: 50px;
-    margin-top: 50px;
+<style>
+ 
+  .blogs-heading{
+  text-align: center;
+  font-size: 50px;
+  margin-top: 50px;
+  font-family: cursive;
+  }
+  .blogs-container{
+padding: 20px;
+margin: 10px 50px;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
 }
-.blogs-container{
-    padding: 20px;
-    margin: 10px 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+
 .blogs-main{
-    height: 550px;
-    width: 400px;
-    margin:10px;
-    padding:20px;
-    border: 1px solid;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+height: 550px;
+width: 400px;
+margin:10px;
+padding:20px;
+border: 1px solid;
+border-radius: 10px;
+background-color: white;
+box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+}
+.blogs-main:hover{
+  border-radius: 10%;
+  background-color:rgb(198, 242, 227);
+  box-shadow: 5px 5px 10px 10px black;
+  cursor: pointer;
 }
 .blogs-main-btn{
-    padding: 10px 30px;
-    margin: 15px 60px;
-    background-color: black;
-    color: #ffff;
-    font-size: 15px;
-    border-radius: 10px;
+padding: 10px 30px;
+margin: 15px 60px;
+background-color: black;
+color: #ffff;
+font-size: 15px;
+border-radius: 10px;
 }
 .img-blogs{
-    width:100%;
-    height: 230px;
-    align-items: center;
-    
+width:100%;
+height: 230px;
+align-items: center;
+
 }
 p{
-    text-align: justify;
-}
-@media  screen and (max-width: 1000px){
-    .blogs-container{
-        flex-wrap: wrap;
-        justify-content: space-around;
-        
-    }
-
+text-align: justify;
 }
 
-@media screen and (max-width:450px) {
 
-    .blogs-main{
-        width: 100%;
-        height: 550px;
-    }
-    h2{
-        font-size: 10px;
-    }
-    .blogs-main-btn{
-        padding: 5px 60px;
-        margin:5px 20px;
-        background-color: black;
-        color: #ffff;
-        font-size: 10px;
-        text-align: start;
-    }
-  }
-@media screen and (max-width:471px) {
-
-    .blogs-main{
-        width: 100%;
-        height: 600px;
-    }
-   
-}
-@media screen and (max-width:390px) {
-
-    .blogs-main{
-        width: 100%;
-        height: 700px;
-    }
-   
-} 
-    </style>
+</style>
 </head>
 <body>
   
