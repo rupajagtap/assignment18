@@ -5,36 +5,123 @@
     <title>HealthBlogs</title>
     <!-- font awesome cdn link -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-        <link rel="stylesheet" href="./../css/blogs.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&display=swap" rel="stylesheet">
 
-        <!--Website Logo-->
-     <link rel="shortcut icon" href="/icons/homepage logo.png" type="image/x-icon">k
-       <!-- custome css file link -->
-    <link rel="stylesheet" href="./../css/checkup.css"/>
-    <link rel="stylesheet" href="./../css/index.css"/>
-    <link rel="stylesheet" href="./../css/style.css"/> 
+      
+    <style>
+      .blogs-heading{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+}
+.blogs-container{
+    padding: 20px;
+    margin: 10px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.blogs-main{
+    height: 550px;
+    width: 400px;
+    margin:10px;
+    padding:20px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+}
+.blogs-main-btn{
+    padding: 10px 30px;
+    margin: 15px 60px;
+    background-color: black;
+    color: #ffff;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.img-blogs{
+    width:100%;
+    height: 230px;
+    align-items: center;
+    
+}
+p{
+    text-align: justify;
+}
+@media  screen and (max-width: 1000px){
+    .blogs-container{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+
+}
+
+@media screen and (max-width:450px) {
+
+    .blogs-main{
+        width: 100%;
+        height: 550px;
+    }
+    h2{
+        font-size: 10px;
+    }
+    .blogs-main-btn{
+        padding: 5px 60px;
+        margin:5px 20px;
+        background-color: black;
+        color: #ffff;
+        font-size: 10px;
+        text-align: start;
+    }
+  }
+@media screen and (max-width:471px) {
+
+    .blogs-main{
+        width: 100%;
+        height: 600px;
+    }
+   
+}
+@media screen and (max-width:390px) {
+
+    .blogs-main{
+        width: 100%;
+        height: 700px;
+    }
+   
+} 
+    </style>
 </head>
 <body>
   
          
-          <h1 class="blogs-heading">Trending Blogs</h1>
+          <h1 class="blogs-heading" id="main-heading" >Trending Blogs</h1>
+
+
       <div class="blogs-container">
-            <div class="blogs-main">
-                <img src="./../images/vegatable-png.webp"  class="img-blogs"/>
+              <div class="blogs-main">
+                <img src="./img/vegatable-png.webp"  class="img-blogs"/>
                 <h2>Benefits of a Vegetarian Diet</h2>
                 <h5>By Dr.Nikita Toshi </h5>
                 <p>Vegetables are parts of plants that are consumed by humans or other animals as food. The original meaning is still commonly used and is applied to plants</p>
                 <button class="blogs-main-btn">Read Full Blog</button>
               </div>
+
+
               <div class="blogs-main">
-                <img src="./../images/banana-png.webp"  class="img-blogs"/>
+                <img src="./img/banana-png.webp"  class="img-blogs"/>
                 <h2>Benefits Of A Banana Fruit</h2>
                 <h5>By  Dr.Nikita Jain</h5>
                 <p>Bananas contain vitamins A and C, which are essential for healthy, youthful-looking skin. Vitamin A can help reduce fine lines and wrinkles Banana gives protine</p>
                 <button class="blogs-main-btn">Read Full Blog</button>
               </div>
+
+
               <div class="blogs-main">
-                <img src="./../images/Person-Experiencing-Acidity-webp.webp"  class="img-blogs"/>
+                <img src="./img/Person-Experiencing-Acidity-webp.webp"  class="img-blogs"/>
                 <h2>Acidity Problems? </h2>
                 <h5>By Dr.Prachi Garg </h5>
                 <p>Heartburn is a symptom of acidity- When the acid moves up the oesophagus, it touches the lining of the tube and causes a sharp burning sensation in the chest</p>
@@ -43,7 +130,7 @@
        </div>
               <div class="blogs-container">
                 <div class="blogs-main">
-                    <img src="./../images/teeth.png"  class="img-blogs"/>
+                    <img src="./img/teeth.png"  class="img-blogs"/>
                     <h2>Simple Home Remedies For Swollen Gums</h2>
                     <h5>By By Dr Smita Barode </h5>
                     <p>If you have swollen gums, you should get help from a dentist to get a diagnosis and treatment. You can also try home remedies to take care of the swelling at home. </p>
@@ -51,14 +138,15 @@
                </div>
 
         <div class="blogs-main">
-          <img src="./../images/Pharmeasy-blog-png.png"  class="img-blogs"/>
+          <img src="./img/Pharmeasy-blog-png.png"  class="img-blogs"/>
           <h2>Simple and Effective Skin Care Routine</h2>
           <h5>By Dr.Dr. Nayana Shetty</h5>
           <p>Healthy skin is indicative of the quality of diet and lifestyle one follows. The largest organ of the human body and often overlooked, the skin acts as a barrier.</p>
           <button class="blogs-main-btn">Read Full Blog</button>
         </div>
+
         <div class="blogs-main">
-            <img src="./../images/Pharmeasy-blog-32-jpg.jpg"  class="img-blogs"/>
+            <img src="./img/Pharmeasy-blog-32-jpg.jpg"  class="img-blogs"/>
             <h4></h4>
             <h2>Haemoglobin Test, Haematocrit Test , RBC Test</h2>
             <h5>By Dr.Saksham Bhatia</h5>
@@ -67,6 +155,7 @@
         </div>
         </div>
 
- 
+        <center><a href="#main-heading"><img src="" width="60 px"/></a>
+        </center>
 </body>
 </html>
